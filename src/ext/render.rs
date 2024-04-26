@@ -1,8 +1,8 @@
-use crate::{cstr, plugin::*};
+use crate::plugin::*;
 
 use std::ffi::CStr;
 
-pub const CLAP_EXT_RENDER: &CStr = cstr!("clap.render");
+pub const CLAP_EXT_RENDER: &CStr = c"clap.render";
 
 pub const CLAP_RENDER_REALTIME: clap_plugin_render_mode = 0;
 pub const CLAP_RENDER_OFFLINE: clap_plugin_render_mode = 1;

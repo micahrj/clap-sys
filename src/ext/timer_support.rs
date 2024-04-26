@@ -1,8 +1,8 @@
-use crate::{cstr, host::*, id::*, plugin::*};
+use crate::{host::*, id::*, plugin::*};
 
 use std::ffi::CStr;
 
-pub const CLAP_EXT_TIMER_SUPPORT: &CStr = cstr!("clap.timer-support");
+pub const CLAP_EXT_TIMER_SUPPORT: &CStr = c"clap.timer-support";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

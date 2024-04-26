@@ -1,10 +1,10 @@
-use crate::{cstr, events::*, host::*, id::*, plugin::*, string_sizes::*};
+use crate::{events::*, host::*, id::*, plugin::*, string_sizes::*};
 
+use std::ffi::c_char;
 use std::ffi::c_void;
 use std::ffi::CStr;
-use std::os::raw::c_char;
 
-pub const CLAP_EXT_PARAMS: &CStr = cstr!("clap.params");
+pub const CLAP_EXT_PARAMS: &CStr = c"clap.params";
 
 pub const CLAP_PARAM_IS_STEPPED: clap_param_info_flags = 1 << 0;
 pub const CLAP_PARAM_IS_PERIODIC: clap_param_info_flags = 1 << 1;

@@ -1,12 +1,12 @@
-use crate::{cstr, host::*, id::*, plugin::*, string_sizes::*};
+use crate::{host::*, id::*, plugin::*, string_sizes::*};
 
+use std::ffi::c_char;
 use std::ffi::CStr;
-use std::os::raw::c_char;
 
-pub const CLAP_EXT_AUDIO_PORTS: &CStr = cstr!("clap.audio-ports");
+pub const CLAP_EXT_AUDIO_PORTS: &CStr = c"clap.audio-ports";
 
-pub const CLAP_PORT_MONO: &CStr = cstr!("mono");
-pub const CLAP_PORT_STEREO: &CStr = cstr!("stereo");
+pub const CLAP_PORT_MONO: &CStr = c"mono";
+pub const CLAP_PORT_STEREO: &CStr = c"stereo";
 
 pub const CLAP_AUDIO_PORT_IS_MAIN: u32 = 1 << 0;
 pub const CLAP_AUDIO_PORT_SUPPORTS_64BITS: u32 = 1 << 1;

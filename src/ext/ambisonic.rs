@@ -1,10 +1,11 @@
-use crate::{cstr, host::*, plugin::*};
+use crate::{host::*, plugin::*};
 
 use std::ffi::CStr;
 
-pub const CLAP_EXT_AMBISONIC: &CStr = cstr!("clap.ambisonic.draft/3");
+pub const CLAP_EXT_AMBISONIC: &CStr = c"clap.ambisonic/3";
+pub const CLAP_EXT_AMBISONIC_COMPAT: &CStr = c"clap.ambisonic.draft/3";
 
-pub const CLAP_PORT_AMBISONIC: &CStr = cstr!("ambisonic");
+pub const CLAP_PORT_AMBISONIC: &CStr = c"ambisonic";
 
 pub const CLAP_AMBISONIC_ORDERING_FUMA: clap_ambisonic_ordering = 0;
 pub const CLAP_AMBISONIC_ORDERING_ACN: clap_ambisonic_ordering = 1;

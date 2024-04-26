@@ -1,9 +1,10 @@
-use crate::{cstr, version::*};
+use crate::version::*;
 
+use std::ffi::c_char;
 use std::ffi::{c_void, CStr};
-use std::os::raw::c_char;
 
-pub const CLAP_PRESET_DISCOVERY_FACTORY_ID: &CStr = cstr!("clap.preset-discovery-factory/draft-2");
+pub const CLAP_PRESET_DISCOVERY_FACTORY_ID: &CStr = c"clap.preset-discovery-factory/2";
+pub const CLAP_PRESET_DISCOVERY_FACTORY_ID_COMPAT: &CStr = c"clap.preset-discovery-factory/draft-2";
 
 pub const CLAP_PRESET_DISCOVERY_LOCATION_FILE: clap_preset_discovery_location_kind = 0;
 pub const CLAP_PRESET_DISCOVERY_LOCATION_PLUGIN: clap_preset_discovery_location_kind = 1;
@@ -21,13 +22,13 @@ pub const CLAP_TIMESTAMP_UNKNOWN: clap_timestamp = 0;
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
-pub struct clap_plugin_id {
+pub struct clap_universal_plugin_id {
     pub abi: *const c_char,
     pub id: *const c_char,
 }
 
-unsafe impl Send for clap_plugin_id {}
-unsafe impl Sync for clap_plugin_id {}
+unsafe impl Send for clap_universal_plugin_id {}
+unsafe impl Sync for clap_universal_plugin_id {}
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -50,7 +51,7 @@ pub struct clap_preset_discovery_metadata_receiver {
     pub add_plugin_id: Option<
         unsafe extern "C" fn(
             receiver: *const clap_preset_discovery_metadata_receiver,
-            plugin_id: *const clap_plugin_id,
+            plugin_id: *const clap_universal_plugin_id,
         ),
     >,
     pub set_soundpack_id: Option<

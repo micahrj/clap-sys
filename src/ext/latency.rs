@@ -1,8 +1,8 @@
-use crate::{cstr, host::*, plugin::*};
+use crate::{host::*, plugin::*};
 
 use std::ffi::CStr;
 
-pub const CLAP_EXT_LATENCY: &CStr = cstr!("clap.latency");
+pub const CLAP_EXT_LATENCY: &CStr = c"clap.latency";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

@@ -1,10 +1,7 @@
-use crate::cstr;
-
+use std::ffi::c_char;
 use std::ffi::CStr;
-use std::os::raw::c_char;
 
-pub const CLAP_PLUGIN_INVALIDATION_FACTORY_ID: &CStr =
-    cstr!("clap.plugin-invalidation-factory/draft0");
+pub const CLAP_PLUGIN_INVALIDATION_FACTORY_ID: &CStr = c"clap.plugin-invalidation-factory/draft0";
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

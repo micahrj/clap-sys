@@ -1,9 +1,10 @@
-use crate::{cstr, host::*, id::*, plugin::*, string_sizes::*};
+use crate::{host::*, id::*, plugin::*, string_sizes::*};
 
+use std::ffi::c_char;
 use std::ffi::CStr;
-use std::os::raw::c_char;
 
-pub const CLAP_EXT_REMOTE_CONTROLS: &CStr = cstr!("clap.remote-controls.draft/2");
+pub const CLAP_EXT_REMOTE_CONTROLS: &CStr = c"clap.remote-controls/2";
+pub const CLAP_EXT_REMOTE_CONTROLS_COMPAT: &CStr = c"clap.remote-controls.draft/2";
 
 pub const CLAP_REMOTE_CONTROLS_COUNT: usize = 8;
 
