@@ -1,10 +1,10 @@
-use crate::{host::*, id::*, plugin::*};
+use crate::{cstr, host::*, id::*, plugin::*};
 
 use std::ffi::c_char;
 use std::ffi::{c_void, CStr};
 
-pub const CLAP_EXT_CONTEXT_MENU: &CStr = c"clap.context-menu/1";
-pub const CLAP_EXT_CONTEXT_MENU_COMPAT: &CStr = c"clap.context-menu.draft/0";
+pub const CLAP_EXT_CONTEXT_MENU: &CStr = cstr!("clap.context-menu/1");
+pub const CLAP_EXT_CONTEXT_MENU_COMPAT: &CStr = cstr!("clap.context-menu.draft/0");
 
 pub const CLAP_CONTEXT_MENU_TARGET_KIND_GLOBAL: u32 = 0;
 pub const CLAP_CONTEXT_MENU_TARGET_KIND_PARAM: u32 = 1;

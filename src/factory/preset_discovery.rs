@@ -1,10 +1,11 @@
-use crate::version::*;
+use crate::{cstr, version::*};
 
 use std::ffi::c_char;
 use std::ffi::{c_void, CStr};
 
-pub const CLAP_PRESET_DISCOVERY_FACTORY_ID: &CStr = c"clap.preset-discovery-factory/2";
-pub const CLAP_PRESET_DISCOVERY_FACTORY_ID_COMPAT: &CStr = c"clap.preset-discovery-factory/draft-2";
+pub const CLAP_PRESET_DISCOVERY_FACTORY_ID: &CStr = cstr!("clap.preset-discovery-factory/2");
+pub const CLAP_PRESET_DISCOVERY_FACTORY_ID_COMPAT: &CStr =
+    cstr!("clap.preset-discovery-factory/draft-2");
 
 pub const CLAP_PRESET_DISCOVERY_LOCATION_FILE: clap_preset_discovery_location_kind = 0;
 pub const CLAP_PRESET_DISCOVERY_LOCATION_PLUGIN: clap_preset_discovery_location_kind = 1;

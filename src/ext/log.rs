@@ -1,9 +1,9 @@
-use crate::host::*;
+use crate::{cstr, host::*};
 
 use std::ffi::c_char;
 use std::ffi::CStr;
 
-pub const CLAP_EXT_LOG: &CStr = c"clap.log";
+pub const CLAP_EXT_LOG: &CStr = cstr!("clap.log");
 
 pub const CLAP_LOG_DEBUG: clap_log_severity = 0;
 pub const CLAP_LOG_INFO: clap_log_severity = 1;

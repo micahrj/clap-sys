@@ -1,9 +1,9 @@
-use crate::{host::*, id::*, plugin::*, string_sizes::*};
+use crate::{cstr, host::*, id::*, plugin::*, string_sizes::*};
 
 use std::ffi::c_char;
 use std::ffi::CStr;
 
-pub const CLAP_EXT_NOTE_PORTS: &CStr = c"clap.note-ports";
+pub const CLAP_EXT_NOTE_PORTS: &CStr = cstr!("clap.note-ports");
 
 pub const CLAP_NOTE_DIALECT_CLAP: clap_note_dialect = 1 << 0;
 pub const CLAP_NOTE_DIALECT_MIDI: clap_note_dialect = 1 << 1;

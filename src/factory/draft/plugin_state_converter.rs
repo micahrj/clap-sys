@@ -1,13 +1,15 @@
 use std::ffi::{c_char, c_void, CStr};
 
+use crate::factory::preset_discovery::clap_universal_plugin_id;
 use crate::{
-    factory::preset_discovery::clap_universal_plugin_id,
+    cstr,
     id::clap_id,
     stream::{clap_istream, clap_ostream},
     version::clap_version,
 };
 
-pub const CLAP_PLUGIN_STATE_CONVERTER_FACTORY_ID: &CStr = c"clap.plugin-state-converter-factory/1";
+pub const CLAP_PLUGIN_STATE_CONVERTER_FACTORY_ID: &CStr =
+    cstr!("clap.plugin-state-converter-factory/1");
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

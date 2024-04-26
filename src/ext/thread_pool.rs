@@ -1,8 +1,8 @@
-use crate::{host::*, plugin::*};
+use crate::{cstr, host::*, plugin::*};
 
 use std::ffi::CStr;
 
-pub const CLAP_EXT_THREAD_POOL: &CStr = c"clap.thread-pool";
+pub const CLAP_EXT_THREAD_POOL: &CStr = cstr!("clap.thread-pool");
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

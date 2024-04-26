@@ -1,9 +1,9 @@
-use crate::{host::*, plugin::*};
+use crate::{cstr, host::*, plugin::*};
 
 use std::ffi::c_char;
 use std::ffi::CStr;
 
-pub const CLAP_EXT_RESOURCE_DIRECTORY: &CStr = c"clap.resource-directory.draft/0";
+pub const CLAP_EXT_RESOURCE_DIRECTORY: &CStr = cstr!("clap.resource-directory.draft/0");
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

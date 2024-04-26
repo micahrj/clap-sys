@@ -1,8 +1,8 @@
-use crate::{host::*, plugin::*, stream::*};
+use crate::{cstr, host::*, plugin::*, stream::*};
 
 use std::ffi::CStr;
 
-pub const CLAP_EXT_STATE: &CStr = c"clap.state";
+pub const CLAP_EXT_STATE: &CStr = cstr!("clap.state");
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

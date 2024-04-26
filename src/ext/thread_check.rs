@@ -1,8 +1,8 @@
-use crate::host::*;
+use crate::{cstr, host::*};
 
 use std::ffi::CStr;
 
-pub const CLAP_EXT_THREAD_CHECK: &CStr = c"clap.thread-check";
+pub const CLAP_EXT_THREAD_CHECK: &CStr = cstr!("clap.thread-check");
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
