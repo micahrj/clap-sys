@@ -1,8 +1,8 @@
 use std::ffi::{c_char, c_void, CStr};
 
-use crate::factory::preset_discovery::clap_universal_plugin_id;
 use crate::{
     cstr,
+    factory::preset_discovery::clap_universal_plugin_id,
     id::clap_id,
     stream::{clap_istream, clap_ostream},
     version::clap_version,

@@ -1,4 +1,5 @@
-use crate::{cstr, factory::preset_discovery::*, host::*, plugin::*};
+use crate::factory::preset_discovery::*;
+use crate::{cstr, host::*, plugin::*};
 
 use std::ffi::CStr;
 use std::os::raw::c_char;
