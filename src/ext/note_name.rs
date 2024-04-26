@@ -1,7 +1,7 @@
 use crate::{cstr, host::*, plugin::*, string_sizes::*};
 
-use std::ffi::c_char;
 use std::ffi::CStr;
+use std::os::raw::c_char;
 
 pub const CLAP_EXT_NOTE_NAME: &CStr = cstr!("clap.note-name");
 

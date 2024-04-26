@@ -1,7 +1,7 @@
 use crate::{cstr, host::*, plugin::*};
 
-use std::ffi::c_char;
 use std::ffi::CStr;
+use std::os::raw::c_char;
 
 pub const CLAP_PLUGIN_FACTORY_ID: &CStr = cstr!("clap.plugin-factory");
 

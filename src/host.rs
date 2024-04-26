@@ -1,7 +1,7 @@
 use crate::version::*;
 
-use std::ffi::c_char;
 use std::ffi::c_void;
+use std::os::raw::c_char;
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
