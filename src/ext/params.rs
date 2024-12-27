@@ -22,6 +22,7 @@ pub const CLAP_PARAM_IS_MODULATABLE_PER_KEY: clap_param_info_flags = 1 << 12;
 pub const CLAP_PARAM_IS_MODULATABLE_PER_CHANNEL: clap_param_info_flags = 1 << 13;
 pub const CLAP_PARAM_IS_MODULATABLE_PER_PORT: clap_param_info_flags = 1 << 14;
 pub const CLAP_PARAM_REQUIRES_PROCESS: clap_param_info_flags = 1 << 15;
+pub const CLAP_PARAM_IS_ENUM: clap_param_info_flags = 1 << 16;
 
 pub type clap_param_info_flags = u32;
 
