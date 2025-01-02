@@ -24,6 +24,9 @@ pub struct clap_plugin_state_converter_descriptor {
     pub description: *const c_char,
 }
 
+unsafe impl Send for clap_plugin_state_converter_descriptor {}
+unsafe impl Sync for clap_plugin_state_converter_descriptor {}
+
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct clap_plugin_state_converter {
@@ -58,6 +61,9 @@ pub struct clap_plugin_state_converter {
         ) -> bool,
     >,
 }
+
+unsafe impl Send for clap_plugin_state_converter {}
+unsafe impl Sync for clap_plugin_state_converter {}
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
