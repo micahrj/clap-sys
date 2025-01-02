@@ -2,7 +2,7 @@ use crate::{cstr, plugin::*};
 
 use std::ffi::{c_char, c_void, CStr};
 
-pub const CLAP_EXT_EXTENSIBLE_AUDIO_PORTS: &CStr = cstr!("clap.extensible-audio-ports.draft0");
+pub const CLAP_EXT_EXTENSIBLE_AUDIO_PORTS: &CStr = cstr!("clap.extensible-audio-ports/1");
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

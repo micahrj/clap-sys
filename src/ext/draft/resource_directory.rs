@@ -3,7 +3,7 @@ use crate::{cstr, host::*, plugin::*};
 use std::ffi::CStr;
 use std::os::raw::c_char;
 
-pub const CLAP_EXT_RESOURCE_DIRECTORY: &CStr = cstr!("clap.resource-directory.draft/0");
+pub const CLAP_EXT_RESOURCE_DIRECTORY: &CStr = cstr!("clap.resource-directory/1");
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

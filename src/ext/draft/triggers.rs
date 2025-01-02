@@ -4,7 +4,7 @@ use std::ffi::c_void;
 use std::ffi::CStr;
 use std::os::raw::c_char;
 
-pub const CLAP_EXT_TRIGGERS: &CStr = cstr!("clap.triggers.draft/0");
+pub const CLAP_EXT_TRIGGERS: &CStr = cstr!("clap.triggers/1");
 
 pub const CLAP_TRIGGER_IS_AUTOMATABLE_PER_NOTE_ID: clap_trigger_info_flags = 1 << 0;
 pub const CLAP_TRIGGER_IS_AUTOMATABLE_PER_KEY: clap_trigger_info_flags = 1 << 1;

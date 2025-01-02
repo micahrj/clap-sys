@@ -5,7 +5,9 @@ use std::ffi::CStr;
 use std::os::raw::c_char;
 
 pub const CLAP_EXT_AUDIO_PORTS_CONFIG: &CStr = cstr!("clap.audio-ports-config");
-pub const CLAP_EXT_AUDIO_PORTS_CONFIG_INFO: &CStr = cstr!("clap.audio-ports-config-info/draft-0");
+pub const CLAP_EXT_AUDIO_PORTS_CONFIG_INFO: &CStr = cstr!("clap.audio-ports-config-info/1");
+pub const CLAP_EXT_AUDIO_PORTS_CONFIG_INFO_COMPAT: &CStr =
+    cstr!("clap.audio-ports-config-info/draft-0");
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
