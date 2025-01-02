@@ -63,7 +63,7 @@ pub struct clap_plugin_state_converter {
 #[derive(Debug, Copy, Clone)]
 pub struct clap_plugin_state_converter_factory {
     pub count:
-        Option<unsafe extern "C" fn(factory: *mut clap_plugin_state_converter_factory) -> u32>,
+        Option<unsafe extern "C" fn(factory: *const clap_plugin_state_converter_factory) -> u32>,
     pub get_descriptor: Option<
         unsafe extern "C" fn(
             factory: *const clap_plugin_state_converter_factory,
