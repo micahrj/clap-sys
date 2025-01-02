@@ -1,7 +1,6 @@
 use crate::{cstr, events::*, host::*, id::*, plugin::*, string_sizes::*};
 
-use std::ffi::CStr;
-use std::os::raw::c_char;
+use std::ffi::{c_char, CStr};
 
 pub const CLAP_EXT_TUNING: &CStr = cstr!("clap.tuning/2");
 

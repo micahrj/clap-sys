@@ -1,8 +1,6 @@
 use crate::{cstr, events::*, host::*, id::*, plugin::*, string_sizes::*};
 
-use std::ffi::c_void;
-use std::ffi::CStr;
-use std::os::raw::c_char;
+use std::ffi::{c_char, c_void, CStr};
 
 pub const CLAP_EXT_PARAMS: &CStr = cstr!("clap.params");
 

@@ -1,7 +1,6 @@
 use crate::{cstr, timestamp::*, universal_plugin_id::*, version::*};
 
-use std::ffi::{c_void, CStr};
-use std::os::raw::c_char;
+use std::ffi::{c_char, c_void, CStr};
 
 pub const CLAP_PRESET_DISCOVERY_FACTORY_ID: &CStr = cstr!("clap.preset-discovery-factory/2");
 pub const CLAP_PRESET_DISCOVERY_FACTORY_ID_COMPAT: &CStr =

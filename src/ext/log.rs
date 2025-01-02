@@ -1,7 +1,6 @@
 use crate::{cstr, host::*};
 
-use std::ffi::CStr;
-use std::os::raw::c_char;
+use std::ffi::{c_char, CStr};
 
 pub const CLAP_EXT_LOG: &CStr = cstr!("clap.log");
 

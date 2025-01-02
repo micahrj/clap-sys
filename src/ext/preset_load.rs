@@ -1,8 +1,7 @@
 use crate::factory::preset_discovery::*;
 use crate::{cstr, host::*, plugin::*};
 
-use std::ffi::CStr;
-use std::os::raw::c_char;
+use std::ffi::{c_char, CStr};
 
 pub const CLAP_EXT_PRESET_LOAD: &CStr = cstr!("clap.preset-load/2");
 pub const CLAP_EXT_PRESET_LOAD_COMPAT: &CStr = cstr!("clap.preset-load.draft/2");
