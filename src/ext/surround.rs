@@ -2,7 +2,8 @@ use crate::{cstr, host::*, plugin::*};
 
 use std::ffi::CStr;
 
-pub const CLAP_EXT_SURROUND: &CStr = cstr!("clap.surround.draft/4");
+pub const CLAP_EXT_SURROUND: &CStr = cstr!("clap.surround/4");
+pub const CLAP_EXT_SURROUND_COMPAT: &CStr = cstr!("clap.surround.draft/4");
 
 pub const CLAP_PORT_SURROUND: &CStr = cstr!("surround");
 

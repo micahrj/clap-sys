@@ -2,7 +2,8 @@ use crate::{cstr, host::*, plugin::*};
 
 use std::ffi::CStr;
 
-pub const CLAP_EXT_AMBISONIC: &CStr = cstr!("clap.ambisonic.draft/3");
+pub const CLAP_EXT_AMBISONIC: &CStr = cstr!("clap.ambisonic/3");
+pub const CLAP_EXT_AMBISONIC_COMPAT: &CStr = cstr!("clap.ambisonic.draft/3");
 
 pub const CLAP_PORT_AMBISONIC: &CStr = cstr!("ambisonic");
 

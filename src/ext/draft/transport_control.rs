@@ -2,7 +2,7 @@ use crate::{cstr, fixedpoint::*, host::*};
 
 use std::ffi::CStr;
 
-pub const CLAP_EXT_TRANSPORT_CONTROL: &CStr = cstr!("clap.transport-control.draft/0");
+pub const CLAP_EXT_TRANSPORT_CONTROL: &CStr = cstr!("clap.transport-control/1");
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

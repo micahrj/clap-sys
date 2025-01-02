@@ -1,2 +1,2 @@
 pub mod plugin_invalidation;
-pub mod preset_discovery;
+pub mod plugin_state_converter;

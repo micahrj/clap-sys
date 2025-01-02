@@ -9,8 +9,8 @@ pub struct clap_version {
 }
 
 pub const CLAP_VERSION_MAJOR: u32 = 1;
-pub const CLAP_VERSION_MINOR: u32 = 1;
-pub const CLAP_VERSION_REVISION: u32 = 10;
+pub const CLAP_VERSION_MINOR: u32 = 2;
+pub const CLAP_VERSION_REVISION: u32 = 0;
 
 pub const CLAP_VERSION: clap_version = clap_version {
     major: CLAP_VERSION_MAJOR,
