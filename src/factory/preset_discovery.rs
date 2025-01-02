@@ -1,4 +1,4 @@
-use crate::{cstr, version::*};
+use crate::{cstr, timestamp::*, universal_plugin_id::*, version::*};
 
 use std::ffi::{c_void, CStr};
 use std::os::raw::c_char;
@@ -16,20 +16,6 @@ pub const CLAP_PRESET_DISCOVERY_IS_FACTORY_CONTENT: u32 = 1 << 0;
 pub const CLAP_PRESET_DISCOVERY_IS_USER_CONTENT: u32 = 1 << 1;
 pub const CLAP_PRESET_DISCOVERY_IS_DEMO_CONTENT: u32 = 1 << 2;
 pub const CLAP_PRESET_DISCOVERY_IS_FAVORITE: u32 = 1 << 3;
-
-pub type clap_timestamp = u64;
-
-pub const CLAP_TIMESTAMP_UNKNOWN: clap_timestamp = 0;
-
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct clap_universal_plugin_id {
-    pub abi: *const c_char,
-    pub id: *const c_char,
-}
-
-unsafe impl Send for clap_universal_plugin_id {}
-unsafe impl Sync for clap_universal_plugin_id {}
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

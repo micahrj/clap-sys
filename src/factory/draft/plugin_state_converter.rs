@@ -2,9 +2,9 @@ use std::ffi::{c_char, c_void, CStr};
 
 use crate::{
     cstr,
-    factory::preset_discovery::clap_universal_plugin_id,
     id::clap_id,
     stream::{clap_istream, clap_ostream},
+    universal_plugin_id::clap_universal_plugin_id,
     version::clap_version,
 };
 

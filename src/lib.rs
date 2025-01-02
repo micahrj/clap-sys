@@ -15,6 +15,8 @@ pub mod plugin_features;
 pub mod process;
 pub mod stream;
 pub mod string_sizes;
+pub mod timestamp;
+pub mod universal_plugin_id;
 pub mod version;
 
 /// Define a null terminated `CStr` literal.
