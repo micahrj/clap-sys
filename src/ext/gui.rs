@@ -1,8 +1,7 @@
 use crate::{cstr, host::*, plugin::*};
 
-use std::ffi::{c_void, CStr};
+use std::ffi::{c_char, c_ulong, c_void, CStr};
 use std::fmt::Debug;
-use std::os::raw::{c_char, c_ulong};
 
 pub const CLAP_EXT_GUI: &CStr = cstr!("clap.gui");
 
