@@ -1,3 +1,9 @@
+# 0.5.0
+
+- Update to CLAP version 1.2.2.
+- Increase minimum supported Rust version to 1.64.
+- Fix type of `data32`/`data64` pointers in `clap_audio_buffer` struct.
+
 # 0.4.0
 
 - Update to CLAP version 1.1.9.

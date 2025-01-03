@@ -1,11 +1,11 @@
 [package]
 name = "clap-sys"
-version = "0.4.0"
+version = "0.5.0"
 rust-version = "1.64"
-authors = ["Micah Johnston <micah@glowcoil.com>", "Robbert van der Helm <mail@robbertvanderhelm.nl"]
+authors = ["Micah Johnston <micah@photophore.systems>", "Robbert van der Helm <mail@robbertvanderhelm.nl"]
 edition = "2021"
 description = "Rust bindings for the CLAP audio plugin API"
-repository = "https://github.com/glowcoil/clap-sys"
+repository = "https://github.com/micahrj/clap-sys"
 readme = "README.md"
 license = "MIT/Apache-2.0"
 
