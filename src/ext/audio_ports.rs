@@ -1,6 +1,6 @@
 use crate::{cstr, host::*, id::*, plugin::*, string_sizes::*};
 
-use std::ffi::{c_char, CStr};
+use core::ffi::{c_char, CStr};
 
 pub const CLAP_EXT_AUDIO_PORTS: &CStr = cstr!("clap.audio-ports");
 

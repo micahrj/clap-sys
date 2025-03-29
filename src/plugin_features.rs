@@ -1,6 +1,6 @@
 use crate::cstr;
 
-use std::ffi::CStr;
+use core::ffi::CStr;
 
 pub const CLAP_PLUGIN_FEATURE_INSTRUMENT: &CStr = cstr!("instrument");
 

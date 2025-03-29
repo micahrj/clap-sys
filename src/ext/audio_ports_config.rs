@@ -1,7 +1,7 @@
 use crate::ext::audio_ports::*;
 use crate::{cstr, host::*, id::*, plugin::*, string_sizes::*};
 
-use std::ffi::{c_char, CStr};
+use core::ffi::{c_char, CStr};
 
 pub const CLAP_EXT_AUDIO_PORTS_CONFIG: &CStr = cstr!("clap.audio-ports-config");
 pub const CLAP_EXT_AUDIO_PORTS_CONFIG_INFO: &CStr = cstr!("clap.audio-ports-config-info/1");

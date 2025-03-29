@@ -1,6 +1,6 @@
 use crate::{cstr, plugin::*};
 
-use std::ffi::CStr;
+use core::ffi::CStr;
 
 pub const CLAP_EXT_RENDER: &CStr = cstr!("clap.render");
 

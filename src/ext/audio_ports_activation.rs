@@ -1,6 +1,6 @@
 use crate::{cstr, plugin::*};
 
-use std::ffi::CStr;
+use core::ffi::CStr;
 
 pub const CLAP_EXT_AUDIO_PORTS_ACTIVATION: &CStr = cstr!("clap.audio-ports-activation/2");
 pub const CLAP_EXT_AUDIO_PORTS_ACTIVATION_COMPAT: &CStr =

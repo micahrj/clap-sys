@@ -1,6 +1,6 @@
 use crate::{cstr, host::*};
 
-use std::ffi::CStr;
+use core::ffi::CStr;
 
 pub const CLAP_EXT_THREAD_CHECK: &CStr = cstr!("clap.thread-check");
 

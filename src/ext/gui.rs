@@ -1,7 +1,7 @@
 use crate::{cstr, host::*, plugin::*};
 
-use std::ffi::{c_char, c_ulong, c_void, CStr};
-use std::fmt::Debug;
+use core::ffi::{c_char, c_ulong, c_void, CStr};
+use core::fmt::Debug;
 
 pub const CLAP_EXT_GUI: &CStr = cstr!("clap.gui");
 
@@ -109,7 +109,7 @@ pub struct clap_host_gui {
 }
 
 impl Debug for clap_window_handle {
-    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+    fn fmt(&self, f: &mut core::fmt::Formatter<'_>) -> core::fmt::Result {
         // We can't know which variant this actually is without supposed to be without checking the
         // `api` field in `clap_window`, but that cannot be done safely
         f.debug_struct("clap_window_handle").finish_non_exhaustive()

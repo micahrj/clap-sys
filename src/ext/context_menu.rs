@@ -1,6 +1,6 @@
 use crate::{cstr, host::*, id::*, plugin::*};
 
-use std::ffi::{c_char, c_void, CStr};
+use core::ffi::{c_char, c_void, CStr};
 
 pub const CLAP_EXT_CONTEXT_MENU: &CStr = cstr!("clap.context-menu/1");
 pub const CLAP_EXT_CONTEXT_MENU_COMPAT: &CStr = cstr!("clap.context-menu.draft/0");

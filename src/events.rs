@@ -1,6 +1,6 @@
 use crate::{fixedpoint::*, id::*};
 
-use std::ffi::c_void;
+use core::ffi::c_void;
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]

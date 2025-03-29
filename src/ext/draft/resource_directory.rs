@@ -1,6 +1,6 @@
 use crate::{cstr, host::*, plugin::*};
 
-use std::ffi::{c_char, CStr};
+use core::ffi::{c_char, CStr};
 
 pub const CLAP_EXT_RESOURCE_DIRECTORY: &CStr = cstr!("clap.resource-directory/1");
 

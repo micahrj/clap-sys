@@ -1,6 +1,6 @@
 use crate::{cstr, host::*, plugin::*, stream::*};
 
-use std::ffi::CStr;
+use core::ffi::CStr;
 
 pub const CLAP_EXT_STATE: &CStr = cstr!("clap.state");
 

@@ -1,6 +1,6 @@
 use crate::{cstr, host::*, plugin::*};
 
-use std::ffi::CStr;
+use core::ffi::CStr;
 
 pub const CLAP_EXT_POSIX_FD_SUPPORT: &CStr = cstr!("clap.posix-fd-support");
 

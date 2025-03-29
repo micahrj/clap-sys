@@ -1,6 +1,6 @@
 use crate::{cstr, fixedpoint::*, host::*};
 
-use std::ffi::CStr;
+use core::ffi::CStr;
 
 pub const CLAP_EXT_TRANSPORT_CONTROL: &CStr = cstr!("clap.transport-control/1");
 

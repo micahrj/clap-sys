@@ -1,6 +1,6 @@
 use crate::{cstr, plugin::*, stream::*};
 
-use std::ffi::CStr;
+use core::ffi::CStr;
 
 pub const CLAP_EXT_STATE_CONTEXT: &CStr = cstr!("clap.state-context/2");
 

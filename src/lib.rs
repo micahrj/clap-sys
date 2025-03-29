@@ -22,7 +22,7 @@ pub mod version;
 /// Define a null terminated `CStr` literal.
 macro_rules! cstr {
     ($str:literal) => {
-        unsafe { std::ffi::CStr::from_bytes_with_nul_unchecked(concat!($str, "\0").as_bytes()) }
+        unsafe { core::ffi::CStr::from_bytes_with_nul_unchecked(concat!($str, "\0").as_bytes()) }
     };
 }
 pub(crate) use cstr;

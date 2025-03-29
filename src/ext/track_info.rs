@@ -1,6 +1,6 @@
 use crate::{color::*, cstr, host::*, plugin::*, string_sizes::*};
 
-use std::ffi::{c_char, CStr};
+use core::ffi::{c_char, CStr};
 
 pub const CLAP_EXT_TRACK_INFO: &CStr = cstr!("clap.track-info/1");
 pub const CLAP_EXT_TRACK_INFO_COMPAT: &CStr = cstr!("clap.track-info.draft/1");

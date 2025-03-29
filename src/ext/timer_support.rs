@@ -1,6 +1,6 @@
 use crate::{cstr, host::*, id::*, plugin::*};
 
-use std::ffi::CStr;
+use core::ffi::CStr;
 
 pub const CLAP_EXT_TIMER_SUPPORT: &CStr = cstr!("clap.timer-support");
 

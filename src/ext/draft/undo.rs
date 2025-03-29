@@ -1,6 +1,6 @@
 use crate::{cstr, host::*, id::*, plugin::*};
 
-use std::ffi::{c_char, c_void, CStr};
+use core::ffi::{c_char, c_void, CStr};
 
 pub const CLAP_EXT_UNDO: &CStr = cstr!("clap.undo/4");
 pub const CLAP_EXT_UNDO_CONTEXT: &CStr = cstr!("clap.undo_context/4");

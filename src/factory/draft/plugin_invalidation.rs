@@ -1,6 +1,6 @@
 use crate::cstr;
 
-use std::ffi::{c_char, CStr};
+use core::ffi::{c_char, CStr};
 
 pub const CLAP_PLUGIN_INVALIDATION_FACTORY_ID: &CStr = cstr!("clap.plugin-invalidation-factory/1");
 

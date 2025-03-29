@@ -1,6 +1,6 @@
 use crate::{cstr, host::*, id::*, plugin::*, string_sizes::*};
 
-use std::ffi::{c_char, CStr};
+use core::ffi::{c_char, CStr};
 
 pub const CLAP_EXT_NOTE_PORTS: &CStr = cstr!("clap.note-ports");
 
