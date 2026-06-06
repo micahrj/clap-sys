@@ -7,11 +7,13 @@ pub const CLAP_EXT_GUI: &CStr = cstr!("clap.gui");
 
 pub const CLAP_WINDOW_API_WIN32: &CStr = cstr!("win32");
 pub const CLAP_WINDOW_API_COCOA: &CStr = cstr!("cocoa");
+pub const CLAP_WINDOW_API_UIKIT: &CStr = cstr!("uikit");
 pub const CLAP_WINDOW_API_X11: &CStr = cstr!("x11");
 pub const CLAP_WINDOW_API_WAYLAND: &CStr = cstr!("wayland");
 
 pub type clap_hwnd = *mut c_void;
 pub type clap_nsview = *mut c_void;
+pub type clap_uiview = *mut c_void;
 pub type clap_xwnd = c_ulong;
 
 #[repr(C)]
@@ -29,6 +31,7 @@ unsafe impl Sync for clap_window {}
 #[derive(Copy, Clone)]
 pub union clap_window_handle {
     pub cocoa: clap_nsview,
+    pub uikit: clap_uiview,
     pub x11: clap_xwnd,
     pub win32: clap_hwnd,
     pub ptr: *mut c_void,
