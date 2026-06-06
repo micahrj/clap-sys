@@ -1,7 +1,12 @@
+pub mod background_activation;
+pub mod background_progress;
+pub mod background_state_context;
 pub mod extensible_audio_ports;
+pub mod flush_events;
 pub mod gain_adjustment_metering;
 pub mod mini_curve_display;
 pub mod octave_number;
+pub mod params_origin;
 pub mod project_location;
 pub mod resource_directory;
 pub mod scratch_memory;
