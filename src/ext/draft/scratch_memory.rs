@@ -1,7 +1,7 @@
 use crate::host::*;
 
-use std::ffi::c_void;
-use std::ffi::CStr;
+use core::ffi::c_void;
+use core::ffi::CStr;
 
 pub const CLAP_EXT_SCRATCH_MEMORY: &CStr = c"clap.scratch-memory/1";
 

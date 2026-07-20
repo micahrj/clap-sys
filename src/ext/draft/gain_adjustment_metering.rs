@@ -1,6 +1,6 @@
 use crate::plugin::*;
 
-use std::ffi::CStr;
+use core::ffi::CStr;
 
 pub const CLAP_EXT_GAIN_ADJUSTMENT_METERING: &CStr = c"clap.gain-adjustment-metering/0";
 
