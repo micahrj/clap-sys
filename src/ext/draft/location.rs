@@ -31,7 +31,7 @@ pub struct clap_plugin_location {
     pub set_location: Option<
         unsafe extern "C" fn(
             plugin: *const clap_plugin,
-            path: *const clap_plugin_location,
+            path: *const clap_plugin_location_element,
             num_elements: u32,
         ),
     >,
