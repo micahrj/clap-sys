@@ -5,8 +5,7 @@ use crate::{
     string_sizes::{CLAP_NAME_SIZE, CLAP_PATH_SIZE},
 };
 
-use core::ffi::c_char;
-use core::ffi::CStr;
+use core::ffi::{c_char, CStr};
 
 pub const CLAP_EXT_LOCATION: &CStr = cstr!("clap.location/1");
 
