@@ -1,5 +1,6 @@
 use crate::{
     color::clap_color,
+    cstr,
     plugin::*,
     string_sizes::{CLAP_NAME_SIZE, CLAP_PATH_SIZE},
 };
@@ -7,7 +8,7 @@ use crate::{
 use core::ffi::c_char;
 use core::ffi::CStr;
 
-pub const CLAP_EXT_LOCATION: &CStr = c"clap.location/1";
+pub const CLAP_EXT_LOCATION: &CStr = cstr!("clap.location/1");
 
 pub const CLAP_PLUGIN_LOCATION_PROJECT: u32 = 1;
 pub const CLAP_PLUGIN_LOCATION_TRACK_GROUP: u32 = 2;

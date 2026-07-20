@@ -1,8 +1,8 @@
-use crate::plugin::*;
+use crate::{cstr, plugin::*};
 
 use core::ffi::CStr;
 
-pub const CLAP_EXT_GAIN_ADJUSTMENT_METERING: &CStr = c"clap.gain-adjustment-metering/0";
+pub const CLAP_EXT_GAIN_ADJUSTMENT_METERING: &CStr = cstr!("clap.gain-adjustment-metering/0");
 
 #[repr(C)]
 #[derive(Debug, Clone, Copy)]

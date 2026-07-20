@@ -1,9 +1,9 @@
-use crate::host::*;
+use crate::{cstr, host::*};
 
 use core::ffi::c_void;
 use core::ffi::CStr;
 
-pub const CLAP_EXT_SCRATCH_MEMORY: &CStr = c"clap.scratch-memory/1";
+pub const CLAP_EXT_SCRATCH_MEMORY: &CStr = cstr!("clap.scratch-memory/1");
 
 #[repr(C)]
 #[derive(Debug, Clone, Copy)]
