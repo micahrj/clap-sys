@@ -25,6 +25,8 @@ pub const CLAP_SURROUND_TFR: u32 = 14;
 pub const CLAP_SURROUND_TBL: u32 = 15;
 pub const CLAP_SURROUND_TBC: u32 = 16;
 pub const CLAP_SURROUND_TBR: u32 = 17;
+pub const CLAP_SURROUND_TSL: u32 = 18;
+pub const CLAP_SURROUND_TSR: u32 = 19;
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
