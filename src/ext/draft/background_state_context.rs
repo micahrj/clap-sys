@@ -3,7 +3,8 @@ use crate::{
     plugin::clap_plugin,
     stream::{clap_istream, clap_ostream},
 };
-use std::ffi::CStr;
+
+use core::ffi::CStr;
 
 pub const CLAP_EXT_BACKGROUND_STATE_CONTEXT: &CStr = cstr!("clap.background-state-context/1");
 

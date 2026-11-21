@@ -1,5 +1,6 @@
 use crate::{cstr, plugin::clap_plugin};
-use std::ffi::CStr;
+
+use core::ffi::CStr;
 
 pub const CLAP_EXT_BACKGROUND_ACTIVATION: &CStr = cstr!("clap.background-activation/1");
 

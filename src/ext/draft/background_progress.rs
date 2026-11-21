@@ -1,5 +1,6 @@
 use crate::{cstr, host::clap_host};
-use std::ffi::{c_char, CStr};
+
+use core::ffi::{c_char, CStr};
 
 pub const CLAP_EXT_BACKGROUND_PROGRESS: &CStr = cstr!("clap.background-progress/1");
 
