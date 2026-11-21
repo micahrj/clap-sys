@@ -26,7 +26,7 @@ unsafe impl Sync for clap_tuning_info {}
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
-pub struct clap_plugin_tuning_t {
+pub struct clap_plugin_tuning {
     pub changed: Option<unsafe extern "C" fn(plugin: *const clap_plugin)>,
 }
 
