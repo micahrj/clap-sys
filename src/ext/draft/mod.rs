@@ -8,3 +8,4 @@ pub mod transport_control;
 pub mod triggers;
 pub mod tuning;
 pub mod undo;
+pub mod webview;
