@@ -1,4 +1,5 @@
 use crate::{cstr, host::clap_host, id::clap_id};
+
 use core::ffi::CStr;
 
 pub const CLAP_EXT_PARAM_HOVERED: &CStr = cstr!("clap.param-hovered/1");
