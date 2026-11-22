@@ -1,6 +1,6 @@
 [package]
 name = "clap-sys"
-version = "0.5.0"
+version = "0.6.0"
 rust-version = "1.64"
 authors = ["Micah Johnston <micah@photophore.systems>", "Robbert van der Helm <mail@robbertvanderhelm.nl"]
 edition = "2021"

@@ -1,3 +1,9 @@
+# 0.6.0
+
+- Update to CLAP version 1.2.10.
+- Add `no_std` attribute to crate.
+- Rename `clap_plugin_tuning_t` struct to `clap_plugin_tuning` for consistency.
+
 # 0.5.0
 
 - Update to CLAP version 1.2.2.
