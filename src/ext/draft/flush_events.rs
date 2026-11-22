@@ -13,8 +13,8 @@ pub struct clap_plugin_flush_events {
     pub flush: Option<
         unsafe extern "C" fn(
             plugin: *const clap_plugin,
-            in_events: *const clap_input_events,
-            out_events: *const clap_output_events,
+            in_: *const clap_input_events,
+            out: *const clap_output_events,
         ),
     >,
 }
