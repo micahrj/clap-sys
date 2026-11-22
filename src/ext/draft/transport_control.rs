@@ -2,7 +2,7 @@ use crate::{cstr, fixedpoint::*, host::*};
 
 use core::ffi::CStr;
 
-pub const CLAP_EXT_TRANSPORT_CONTROL: &CStr = cstr!("clap.transport-control/1");
+pub const CLAP_EXT_TRANSPORT_CONTROL: &CStr = cstr!("clap.transport-control/2");
 
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -20,4 +20,7 @@ pub struct clap_host_transport_control {
     pub request_enable_loop: Option<unsafe extern "C" fn(host: *const clap_host, is_enabled: bool)>,
     pub request_record: Option<unsafe extern "C" fn(host: *const clap_host, is_recording: bool)>,
     pub request_toggle_record: Option<unsafe extern "C" fn(host: *const clap_host)>,
+    pub request_tempo: Option<unsafe extern "C" fn(host: *const clap_host, tempo: f64)>,
+    pub request_time_signature:
+        Option<unsafe extern "C" fn(host: *const clap_host, tsig_num: u16, tsig_denom: u16)>,
 }
